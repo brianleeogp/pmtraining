@@ -8,12 +8,12 @@
 
     <main>
         <h2>Project list</h2>
-        <ul>
-          
-            <% projects.forEach(function(project) { %>
+
+        <ul>  
+            <% works.forEach(function(work) { %>
                 <li>
-                 <strong><%= project.name %></strong>
-                Details: <strong><%= project.goal %></strong>
+                 <strong><%= work.name %></strong>, 
+                Details: <strong><%= work.goal %></strong>
                 </li>
             <% }); %>
         </ul>
