@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head',{variant: 'compact'}); %>
+  </head>
+  <body class="container">
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+        <h2>Project list</h2>
+        <ul>
+          <% projects.forEach(function(project) { %>
+          <li>
+            <strong><%= project.name %></strong>
+            Details: <strong><%= project.goal %></strong>
+          </li>
+          <% }); %>
+        </ul>
+
+      </div>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>
