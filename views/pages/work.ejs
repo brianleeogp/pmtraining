@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <%- include('../partials/head',{variant: 'compact'}); %>
+    <%- include('../partials/head'); %>
   </head>
   <body class="container">
     <header><%- include('../partials/header'); %></header>
@@ -11,11 +11,11 @@
         <ul>
           
             <% projects.forEach(function(project) { %>
-            <li>
-            <strong><%= project.name %></strong>
-            Details: <strong><%= project.goal %></strong>
-          </li>
-          <% }); %>
+                <li>
+                 <strong><%= project.name %></strong>
+                Details: <strong><%= project.goal %></strong>
+                </li>
+            <% }); %>
         </ul>
 
 
