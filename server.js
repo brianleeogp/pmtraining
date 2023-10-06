@@ -25,9 +25,11 @@ app.get("/", function (req, res) {
 // work page
 app.get("/work", function (req, res) {
   const works = [
-    { name: "ExploreSG", goal: "An interactive web-app for social studies/history teachers to create learning journeys for their students on Singapore heritage with possible expansion to domestic and international tourists."},
-    { name: "Glue", goal: "A dynamic map that crawls social media and utilises archival content to connect contemporary experiences in Singapore with our shared past and present.",},
-  ];
+      { name: "ExploreSG", 
+      description: "An interactive web-app for social studies/history teachers to create learning journeys for their students on Singapore heritage with possible expansion to domestic and international tourists.",},
+      { name: "Glue", 
+      description: "A dynamic map that crawls social media and utilises archival content to connect contemporary experiences in Singapore with our shared past and present.",},
+    ];
 
   res.render("pages/work", {
     works: works,
